@@ -1,6 +1,10 @@
+
+#ifndef __POLLER_H__
+#define __POLLER_H__
 #include <map>
 #include <vector>
 class Channel;
+
 class Poller
 {
 public:
@@ -10,3 +14,4 @@ public:
 protected:
 	std::map<int, Channel*>  _channels;
 };
+#endif
